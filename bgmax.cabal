@@ -12,6 +12,7 @@ category:            Finance
 build-type:          Simple
 -- extra-source-files:  
 cabal-version:       >=1.10
+extra-source-files:  changelog.md
 description:         
   A low-level parser for 
   <http://www.bgc.se/upload/Gemensamt/Trycksaker/Manualer/BG6040.pdf BgMax>
