@@ -1,0 +1,4 @@
+bgmax
+=====
+
+Parse BgMax-files
