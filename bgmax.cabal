@@ -1,5 +1,5 @@
 name:                bgmax
-version:             0.1.0.1
+version:             0.2.0.0
 synopsis:            Parse BgMax-files
 homepage:            http://github.com/jonpetterbergman/bgmax
 bug-reports:         http://github.com/jonpetterbergman/bgmax/issues
@@ -14,20 +14,20 @@ build-type:          Simple
 cabal-version:       >=1.10
 extra-source-files:  changelog.md
 description:         
-  A low-level parser for 
-  <http://www.bgc.se/upload/Gemensamt/Trycksaker/Manualer/BG6040.pdf BgMax>
-  -files from <http://www.bgc.se Bankgirocentralen> (BGC).
+  A parser for 
+  <http://www.autogiro.se/globalassets/dokument/tekniska-manualer/bankgiroinbetalningar_tekniskmanual_sv.pdf BgMax>
+  -files from <http://www.autogiro.se BankGirot>.
   It is able to parse all of the 
-  <http://www.bgc.se/templates/Iframe____3125.aspx example files> from BGC.
+  <http://www.autogiro.se/tjanster/inbetalningar/bankgiro-inbetalningar/teknisk-information/ example files> from BGC.
 
 library
-  exposed-modules:     Finance.BgMax.TK 
-                       Finance.BgMax.Parser
+  exposed-modules:     BankGiro.BgMax
   -- other-modules:       
   other-extensions:    OverloadedStrings
-  build-depends:       base >=4.7 && <4.8,
-                       time >=1.2 && <1.5,
-                       bytestring >=0.9 && <10.3,
-                       attoparsec >=0.10 && <0.13
+  build-depends:       
+                       base >= 4.9 && < 4.10,
+                       time >= 1.6 && < 1.7,
+                       bytestring >= 0.10.8.1 && < 0.11,
+                       attoparsec >= 0.13.1.0 && < 0.14
   hs-source-dirs:      src
   default-language:    Haskell2010
