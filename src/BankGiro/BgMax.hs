@@ -1,5 +1,19 @@
 {-# LANGUAGE OverloadedStrings #-}
-module BankGiro.BgMax where
+module BankGiro.BgMax
+ (bgMax,
+  BgMax(..),
+  PaymentChannel(..),
+  Image(..),
+  Address(..),
+  Sender(..),
+  Reference(..),
+  DeductionCode(..),
+  EntryType(..),
+  Entry(..),
+  Currency(..),
+  DepositType(..),
+  Section(..),
+  TestMark(..)) where
 
 import           Control.Applicative              ((<|>))
 import           Control.Monad                    (guard)

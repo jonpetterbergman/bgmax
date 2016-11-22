@@ -1,3 +1,5 @@
+% Version 0.2.0.1
+  - Clean up exports
 # Version 0.2.0.0
   - Complete rewrite, more complete higher level parser
 	
