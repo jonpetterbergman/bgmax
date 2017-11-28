@@ -1,5 +1,5 @@
 name:                bgmax
-version:             0.2.0.1
+version:             0.2.0.2
 synopsis:            Parse BgMax-files
 homepage:            http://github.com/jonpetterbergman/bgmax
 bug-reports:         http://github.com/jonpetterbergman/bgmax/issues
@@ -26,15 +26,15 @@ source-repository head
 source-repository this
   type:     git
   location: http://github.com/jonpetterbergman/bgmax
-  tag:      v0.2.0.1
+  tag:      v0.2.0.2
 
 library
   exposed-modules:     BankGiro.BgMax
   -- other-modules:       
   other-extensions:    OverloadedStrings
   build-depends:       
-                       base >= 4.9 && < 4.10,
-                       time >= 1.6 && < 1.7,
+                       base >= 4.9 && < 4.11,
+                       time >= 1.6 && < 1.9,
                        bytestring >= 0.10.8.1 && < 0.11,
                        attoparsec >= 0.13.1.0 && < 0.14
   hs-source-dirs:      src
