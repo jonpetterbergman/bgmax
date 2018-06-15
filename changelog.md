@@ -8,3 +8,5 @@
   - Clean up exports
 # Version 0.2.0.2
   - Bump base and time dependencies	
+# Version 0.2.0.3
+  - Bump base	
